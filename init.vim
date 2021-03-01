@@ -193,4 +193,5 @@ nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>e :Vifm<CR>
 nnoremap <leader>q :q<CR>
+nnoremap <leader>gb :Gblame<CR>
 
