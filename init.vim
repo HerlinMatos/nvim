@@ -15,6 +15,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-fugitive'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'w0rp/ale'
