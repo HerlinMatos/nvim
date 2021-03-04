@@ -44,6 +44,7 @@ set encoding=UTF-8
 set mouse=a
 set tabstop=4
 set shiftwidth=4
+set wildcharm=<Tab>
 highlight Pmenu ctermbg=238
 set fillchars+=vert:│
 hi VertSplit ctermbg=white
@@ -198,4 +199,5 @@ nnoremap <leader>bb :b#<CR>
 nnoremap <leader>bl :ls<CR>
 nnoremap <leader>. :bnext<CR>
 nnoremap <leader>, :bprevious<CR>
+nnoremap <leader>c :e %:h<Tab>
 
