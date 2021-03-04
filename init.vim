@@ -194,4 +194,8 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>e :Vifm<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>bb :b#<CR>
+nnoremap <leader>bl :ls<CR>
+nnoremap <leader>. :bnext<CR>
+nnoremap <leader>, :bprevious<CR>
 
