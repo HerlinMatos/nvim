@@ -15,11 +15,14 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdcommenter'
-Plug 'tpope/vim-fugitive'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'zivyangll/git-blame.vim'
 
 "--------------------------------------------
 call plug#end()
@@ -194,10 +197,10 @@ nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>e :Vifm<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>bb :b#<CR>
 nnoremap <leader>bl :ls<CR>
 nnoremap <leader>. :bnext<CR>
 nnoremap <leader>, :bprevious<CR>
 nnoremap <leader>c :e %:h<Tab>
-
+nnoremap <leader>r :e<CR>
+nnoremap <Leader>gb :<C-u>call gitblame#echo()<CR>
