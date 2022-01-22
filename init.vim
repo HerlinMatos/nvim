@@ -23,6 +23,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'zivyangll/git-blame.vim'
+Plug 'easymotion/vim-easymotion'
 
 "--------------------------------------------
 call plug#end()
@@ -206,3 +207,4 @@ nnoremap <leader>, :bprevious<CR>
 nnoremap <leader>c :e %:h<Tab>
 nnoremap <leader>r :e<CR>
 nnoremap <Leader>gb :<C-u>call gitblame#echo()<CR>
+map <Leader> <Plug>(easymotion-prefix)
