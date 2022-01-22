@@ -192,7 +192,9 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 set undodir=~/.config/nvim/undodir 
 " set undotree to save to file
 set undofile 
-" " Map show undo tree
+
+lua require('config')
+
 nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>e :Vifm<CR>
