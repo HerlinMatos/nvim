@@ -49,6 +49,7 @@ set mouse=a
 set tabstop=4
 set shiftwidth=4
 set wildcharm=<Tab>
+let mapleader=";"
 highlight Pmenu ctermbg=238
 set fillchars+=vert:│
 hi VertSplit ctermbg=white
