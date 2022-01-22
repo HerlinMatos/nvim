@@ -208,6 +208,15 @@ nnoremap <leader>r :e<CR>
 nnoremap <Leader>gb :<C-u>call gitblame#echo()<CR>
 map <Leader> <Plug>(easymotion-prefix)
 
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files({cwd='./app/apps/airtrfx/modules/'})<cr>
+nnoremap <leader>ffa <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep({cwd='./app/apps/airtrfx/modules/'})<cr>
+nnoremap <leader>fga <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+" Lua code here: ----------------------------------------------------
+
 lua << EOF
 
 require('telescope').setup{
